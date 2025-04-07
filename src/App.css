@@ -1,0 +1,102 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f7ff;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffffff, #f0f4f9);
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d6fa5;
+  transform: translateY(-2px);
+}
+
+h2 {
+  font-size: 20px;
+  color: #34495e;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #27ae60;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1.try-again {
+  color: #e74c3c;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 300ms, filter 300ms ease;
+}
+
+.logo:hover {
+  transform: rotate(5deg);
+  filter: drop-shadow(0 0 2em #0097e6);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 15s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
