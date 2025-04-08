@@ -10,9 +10,9 @@ export default function Lottery() {
     const handleClick = () => {
         const newTicket = functions.generateRandomNumber();
         const sum = functions.sumOfDigits(newTicket);
-
+        const winningSum = 15;
         setTicket(newTicket);
-        setIsWinner(sum === 15); // Check winning condition
+        setIsWinner(sum === winningSum); // Check winning condition
     };
 
     return (
@@ -27,4 +27,4 @@ export default function Lottery() {
             )}
         </div>
     );
-}
+} 
